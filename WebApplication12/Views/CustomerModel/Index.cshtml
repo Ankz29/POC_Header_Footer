@@ -1,0 +1,32 @@
+﻿@model List<WebApplication12.Models.CustomerModel>
+
+@{ 
+    //ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/Header_Footer.cshtml";
+}
+@*<a href="~/Views/_ViewStart.cshtml"></a>*@
+@foreach (var item in Model)
+{
+    <table border="1">
+        <tr>
+            <th> Name: </th>
+            <td>@item.Name</td>
+        </tr>
+        <tr>
+            <th> Address: </th>
+            <td>@item.Address</td>
+        </tr>
+        <tr>
+            <th> Email-ID: </th>
+            <td>@item.Email_Id</td>
+        </tr>
+        <tr>
+            <th> Phone Number: </th>
+            <td>@item.Phone_No</td>
+        </tr>
+        <tr>
+            <th> Gender: </th>
+            <td>@item.Gender</td>
+        </tr>
+    </table>
+}

@@ -1,0 +1,41 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    Layout = null;
+}
+
+
+<head>
+
+    @*<title>@ViewBag.Title </title>*@
+    <script src="https://code.jquery.com/jquery-1.10.2.js"> </script>
+</head>
+<body>
+    <a href="~/CustomerModel/Index">CustomerModel </a>  &nbsp;   &nbsp;   &nbsp;                     @*header-content*@
+    @*<a href="~/About_Us/Index"> About_Us  </a>  &nbsp;   &nbsp;   &nbsp;
+    <a href="~/Contact_Us/Index">Contact_Us</a>*@
+
+    <table>
+        <tr>
+            <td colspan="2" style="text-align:center">
+                <h1 style="color:purple"> Employee Information </h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>@RenderBody() </h2>                      @*main-body content*@
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center; font-size: x-small">
+                @*footer-content*@
+                <h1 style="color:blue"> ©[Softway Solutions]  </h1>             
+                <a href="www.facebook.com" title="facebook-icon" alt="facebook-icon-image"><img src="C:\Users\ankita.m\Desktop" /></a>
+                <a href="www.instagram.com" title="instagram-icon" alt="instagram-icon-image"><img src="C:\Users\ankita.m\Desktop"/></a>
+                <a href="www.twitter.com" title="twitter-icon" alt="twitter-icon-image"><img src="C:\Users\ankita.m\Desktop"/></a>
+            </td>
+        </tr>
+    </table>
+</body>
